@@ -142,8 +142,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.container-cards {
-  display: inherit; }
+.cards-container {
+  display: flex;
+  flex-direction: row; }
 
 .texto-carta {
   display: flex;
