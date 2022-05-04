@@ -1,0 +1,50 @@
+.card{
+    max-width: 430px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f1eeed;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.4s;
+    &:hover{
+        transform: translateY(-3%);
+    }
+    h3:nth-child(0n+1){
+        color: rgb(248, 194, 100);
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    img{
+        width: 30%;
+    }
+}
+.carta-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-cards{
+    display: inherit;
+}
+
+.texto-carta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

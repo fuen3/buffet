@@ -1,0 +1,36 @@
+.contenedor-map-texto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    gap: 0px 20px;
+    grid-template-areas: ". map maptxt .";
+}
+.map{
+    grid-area: map;
+}
+.maptxt{
+    grid-area: maptxt;
+}
+
+.contenedor-map-texto{
+    min-height: 100vh;
+    align-content: center;
+}
+
+.maptxt{
+    background-color: #080707;
+    background: rgb(13,12,13);
+    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%);
+    padding: 15px;
+    color: #f1eeed;
+    border-radius: 10px;
+    font-size: 1.4em;
+    font-family: 'Smooch Sans', sans-serif;
+    span{
+        color: #eebe6a;
+    }
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: .7em;
+    }
+}

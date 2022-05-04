@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.cuerpo {
+  background: #f1eeed; }
+
+.nav-bar__logo {
+  width: 100%; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(238, 190, 106, 0);
+  transition: all .7s;
+  position: absolute; }
+  .menu li {
+    list-style: none;
+    margin: 0 10px; }
+  .menu li:nth-child(0n+3) {
+    width: 5%; }
+  .menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.623);
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.9em;
+    display: block;
+    transition: all .4s; }
+    .menu a:hover {
+      color: #fff; }
+
+.nav-bar {
+  background-color: #c9a66b;
+  display: none;
+  width: 100%;
+  font-size: 1.9em;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.623);
+  font-family: 'Dongle', sans-serif; }
+  .nav-bar i {
+    margin-right: 10px; }
+
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    display: block; }
+  .menu {
+    margin-left: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #eebe6a;
+    position: absolute; }
+  .menu li {
+    padding: 8px; }
+  .menu li:nth-child(0n+3) {
+    display: none; } }
+
+.mostrar {
+  margin-left: 0px; }
+
+.header {
+  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(5, 10, 5, 0.4)), url(../img/buffet.jpeg);
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.header__texto {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.7em;
+  margin-left: 40px;
+  text-shadow: 5px 5px 7px black;
+  color: white; }
+  .header__texto h1 {
+    color: #edbd6b; }
+
+.menu li {
+  position: relative; }
+
+.menu li:not(:nth-child(3))::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.4s ease-out; }
+
+.menu li:hover::before {
+  width: 100%; }
+
+.card {
+  max-width: 430px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f1eeed;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.4s; }
+  .card:hover {
+    transform: translateY(-3%); }
+  .card h3:nth-child(0n+1) {
+    color: #f8c264; }
+  .card h3 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em; }
+  .card p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; }
+  .card img {
+    width: 30%; }
+
+.carta-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.container-cards {
+  display: inherit; }
+
+.texto-carta {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.footer {
+  background-color: #080707;
+  background: #0d0c0d;
+  background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
+  .footer img {
+    width: 7%; }
+  .footer h3 {
+    font-family: 'Smooch Sans', sans-serif;
+    color: #eebe6a; }
+  .footer h4 {
+    font-family: 'Dongle', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3em; }
+
+.contenedor__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #f1eeed; }
+  .contenedor__footer div a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #edbd6b;
+    transition: all .5s; }
+
+.contenedor-map-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 450px;
+  gap: 0px 20px;
+  grid-template-areas: ". map maptxt ."; }
+
+.map {
+  grid-area: map; }
+
+.maptxt {
+  grid-area: maptxt; }
+
+.contenedor-map-texto {
+  min-height: 100vh;
+  align-content: center; }
+
+.maptxt {
+  background-color: #080707;
+  background: #0d0c0d;
+  background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%);
+  padding: 15px;
+  color: #f1eeed;
+  border-radius: 10px;
+  font-size: 1.4em;
+  font-family: 'Smooch Sans', sans-serif; }
+  .maptxt span {
+    color: #eebe6a; }
+  .maptxt p {
+    font-family: 'Poppins', sans-serif;
+    font-size: .7em; }
