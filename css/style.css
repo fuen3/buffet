@@ -106,9 +106,9 @@ html {
 .menu li:hover::before {
   width: 100%; }
 
-.card {
+.card-comida {
   width: 410px;
-  height: 130px;
+  height: 150px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   background-color: #f1eeed;
   padding: 15px;
@@ -116,34 +116,30 @@ html {
   text-align: center;
   border-radius: 10px;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   transition: all 0.4s; }
-  .card:hover {
+  .card-comida:hover {
     transform: translateY(-3%); }
-  .card h3:nth-child(0n+1) {
+  .card-comida h3:nth-child(0n+1) {
     color: #f5b952; }
-  .card h3 {
+  .card-comida h3 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-size: 1em; }
-  .card p {
+    font-size: 1em;
+    font-weight: 700; }
+  .card-comida p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; }
-  .card img {
+  .card-comida img {
     width: 30%; }
 
 .texto-carta {
   display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-.carta-cards-container {
-  display: flex;
-  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-direction: column; }
 
 .carta-container {
   min-height: 100vh;
@@ -153,20 +149,14 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.cards-container {
-  display: flex;
-  flex-direction: row; }
-
 .btn-agregar {
-  border: none;
-  outline: none;
   font-size: 1.3em;
   background-color: #d1d1d1;
   border-radius: 5px;
   width: 25px; }
 
 .input-container {
-  margin: 20px;
+  margin: 20px 0px;
   text-align: center;
   width: 100%; }
   .input-container h3 {
@@ -193,7 +183,7 @@ html {
 
 .titulo-carta {
   font-size: 2em;
-  margin: 15px 0;
+  margin: 15px 0px;
   font-family: 'Roboto', sans-serif;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   color: #f1eeed;
@@ -201,6 +191,14 @@ html {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 8px; }
+
+.ocultar {
+  display: none; }
+  .ocultar div {
+    display: none; }
+
+.btnfiltrado {
+  background-color: #f5b952; }
 
 .footer {
   background-color: #080707;
