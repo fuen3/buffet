@@ -291,7 +291,7 @@ const pintarFooter = () =>{
 
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío con innerHTML</th>
+        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
         `
         return
     }
