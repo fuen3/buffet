@@ -185,7 +185,7 @@ function PintarPizzas(){
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
     Pizzas.forEach(producto =>{
-        template1.querySelector(".title").textContent = producto.title
+        template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
         template1.querySelector("p").textContent = producto.description
         template1.querySelector(".btn-agregar").dataset.id = producto.id
@@ -200,7 +200,7 @@ function PintarMilanesas(){
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
     Milanesas.forEach(producto =>{
-        template1.querySelector(".title").textContent = producto.title
+        template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
         template1.querySelector("p").textContent = producto.description
         template1.querySelector(".btn-agregar").dataset.id = producto.id
@@ -216,7 +216,7 @@ function PintarBurger(){
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
     Hamburgesas.forEach(producto =>{
-        template1.querySelector(".title").textContent = producto.title
+        template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
         template1.querySelector("p").textContent = producto.description
         template1.querySelector(".btn-agregar").dataset.id = producto.id
@@ -239,6 +239,17 @@ const contenedorComida = document.getElementById("container")
 contenedorComida.addEventListener("click", (e) =>{
     if(e.target.classList.contains("btn-agregar")) {
         setCarrito(e.target.parentElement)
+        Toastify({
+            text: "Producto agregado al carrito",
+            duration: 1500,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            style: {
+              background: "linear-gradient(to right, #f5b952, #f5b952)",
+            },
+            onClick: function(){} 
+          }).showToast();
     }
     e.stopPropagation()
 })
@@ -305,9 +316,15 @@ const pintarFooter = () =>{
     fragmentFt.appendChild(clone)
 
     footer.appendChild(fragmentFt)
-
+    const btnFinalizar = document.getElementById("finalizar-compra")
     const btnVaciar = document.getElementById("vaciar-carrito")
     btnVaciar.addEventListener("click", () =>{
+        swal({
+            title: "Carrito vacio",
+            text:``,
+            icon: "warning",
+            button:"Ok"
+          });
         carrito = {}
         items.innerHTML=""
         if (Object.keys(carrito).length === 0) {
@@ -316,6 +333,18 @@ const pintarFooter = () =>{
             `
             
         }
+    })
+    btnFinalizar.addEventListener("click", () =>{
+        swal({
+            title: "Muchas gracias por elegirnos",
+            text:``,
+            icon: "success",
+            button:"Ok"
+          });
+          carrito = {}
+          items.innerHTML=""
+          footer.innerHTML = `
+          <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>`
     })
 }
 cards.addEventListener('click', e => { addCarrito(e) });
@@ -349,4 +378,5 @@ const btnAumentarDisminuir = e => {
     e.stopPropagation()
 }
 
+// BOTONES FILTRADO //
 

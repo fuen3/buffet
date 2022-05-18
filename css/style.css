@@ -106,35 +106,6 @@ html {
 .menu li:hover::before {
   width: 100%; }
 
-.card-comida {
-  width: 410px;
-  height: 150px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  background-color: #f1eeed;
-  padding: 15px;
-  margin: 20px;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  transition: all 0.4s; }
-  .card-comida:hover {
-    transform: translateY(-3%); }
-  .card-comida h3:nth-child(0n+1) {
-    color: #f5b952; }
-  .card-comida h3 {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 700; }
-  .card-comida p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600; }
-  .card-comida img {
-    width: 30%; }
-
 .texto-carta {
   display: flex;
   justify-content: center;
@@ -150,10 +121,7 @@ html {
   background-attachment: fixed; }
 
 .btn-agregar {
-  font-size: 1.3em;
-  background-color: #d1d1d1;
-  border-radius: 5px;
-  width: 25px; }
+  font-size: 1.5em; }
 
 .input-container {
   margin: 20px 0px;
@@ -192,13 +160,42 @@ html {
   width: 100%;
   padding: 8px; }
 
-.ocultar {
-  display: none; }
-  .ocultar div {
-    display: none; }
+div .cardComida {
+  border-radius: 8px;
+  text-align: center;
+  background: #f1eeed;
+  padding: 0px 0px;
+  margin: 20px 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+  position: relative; }
+  div .cardComida .title {
+    color: #f5b952;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background: #0d0c0d;
+    background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
+  div .cardComida p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px; }
+  div .cardComida img {
+    width: 100%; }
+  div .cardComida i {
+    font-size: 1.3em; }
+  div .cardComida .btn-agregar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
 
-.btnfiltrado {
-  background-color: #f5b952; }
+.cardComida:hover {
+  transform: translateY(-3%); }
+
+.signopeso, .price {
+  display: inline-block;
+  font-size: 1.2em; }
 
 .footer {
   background-color: #080707;
