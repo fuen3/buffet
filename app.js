@@ -1,190 +1,21 @@
 //   AGREGANDO PRODUCTOS A LA CARTA VISIBLE //
+fetch("api.json"
+).then(Response => Response.json()
+).then(data =>{ 
+    PintarPizzas(data)
+    PintarBurger(data)
+    PintarMilanesas(data)
+})
 
- const Hamburgesas =[
-    {
-        title :"Triple kinga",
-        price : 970,
-        description : "Pan casero, tres medallones de carne, con triple cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
-        id : 0,
-    },
-    {
-        title : "Doble kinga",
-        price : 850,
-        description : "Pan casero, dos medallones de carne, con doble cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
-        id : 1,
-    },
-    {
-        title : "Tradicional",
-         price :700,
-        description : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
-        id : 2,
-    },
-    {
-        title :"Mini kinga",
-        price : 700,
-        description : "Pan casero, un medallon de carne con doble cheddar, panceta(opcional salsa doble cuarto).Acompañada de papas fritas",
-        id : 3,
-    },
-    {
-        title : "De la casa",
-         price :  750,
-        description : "Pan casero, medallon de carne, muzzarella, cebolla caramelizada y rucula. Acompañada de papas fritas",
-        id : 4,
-    },
-    {
-        title : "Criolla",
-         price :  800,
-        description : "Pan casero, un medallon de carne, queso provolone fundido, morrones y cebollas salteadas en aceite de ajos. Acompañado de papas fritas",
-        id : 5,
-    },
-    {
-        title :"Deluxe",
-        price :900,
-        description : "Pan casero, dos medallones de carne,doble cheddar,lechuga,tomate,panceta y alioli. Acompañado de papas fritas",
-        id : 6,
-    },
-    {
-        title : "Veggie Tradicional",
-         price :  650,
-        description : "Pan casero, dos medallones de carne, con doble cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
-        id : 7,
-    },
-    {
-        title : "Veggie de la casa",
-         price :  700,
-        description : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
-        id : 8,
-    },
-    {
-        title : "Veggie Criolla",
-         price :  700,
-        description : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
-        id : 9,
-    },
-];
-const Milanesas =[
-    {
-        title :"Clasica Completa",
-        price :800,
-        description : "Milanesa de ternera con jamon, queso, tomate y lechuga. Acompañada de papas fritas o ensalada",
-        id : 10,
-    },
-    {
-        title : "Napolitana",
-         price :  850,
-        description : "Milanesa de ternera, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
-        id : 11,
-    },
-    {
-        title : "Fugazzeta",
-         price :  850,
-        description : "Milanesa de ternera con muzzarela, cebolla salteada y orégano. Acompañada de papas fritas",
-        id : 12,
-    },
-    {
-        title :"Cuatro quesos",
-        price :850,
-        description : "Milanesa de tenera con muzzarella, queso azul, provolone y queso parmesano. Acompañada de papas fritas o ensalada",
-        id : 13,
-    },
-    {
-        title : "Criminal",
-         price :  950,
-        description : "Milanesa de tenera, queso chedar, cebolla de verdeo, jamon, dos huevos fritos y pimenton dulce. Acompañada de papas fritas",
-        id : 14,
-    },
-    {
-        title : "Pollo Clasica",
-         price :  800,
-        description : "Milanesa de pollo con jamon, queso, lechuga y tomate. Acompañada de papas fritas",
-        id : 15,
-    },
-    {
-        title :"Pollo Fugazzeta",
-        price : 850,
-        description : "Milanesa de pollo, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
-        id : 16,
-    },
-    {
-        title : "Pollo Cuatro Quesos",
-         price :  850,
-        description : "Milanesa de pollo con muzzarella, queso azul, provolone y queso parmesano. Acompañada de papas fritas o ensalada",
-        id : 17,
-    },
-    {
-        title : "Pollo napolitana",
-         price :  850,
-        description : "Milanesa de pollo, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
-        id : 18,
-    },
-    {
-        title : "Pollo Criminal",
-         price :  950,
-        description : "Milanesa de pollo, queso chedar, cebolla de verdeo, jamon, dos huevos fritos y pimenton dulce. Acompañada de papas fritas",
-        id : 19,
-    },
-];
-const Pizzas =[
-    {
-        title :"Muzzarela",
-        price : 650,
-        description : "Salsa de tomate casera, muzzarella, oregano y aceitunas",
-        id : 20,
-    },
-    {
-        title : "Tomate y Albahaca",
-         price :850,
-        description : "Salsa de tomate casera, muzzarella, tomate en rodajas, albahaca y oregano",
-        id : 21,
-    },
-    {
-        title : "Tomate y ajo",
-         price :  720,
-        description : "Salsa de tomate casera, muzzarella, tomates en rodajas, ajo picado y oregano",
-        id : 22,
-    },
-    {
-        title :"Especial",
-        price :780,
-        description : "Salsa de tomate casera, muzzarella, jamon, morrones asados, aceitunas y oregano",
-        id : 23,
-    },
-    {
-        title : "Fugazzetta",
-         price :  720,
-        description : "Salsa de tomate casera, muzzarella, cebolla curada y oregano",
-        id : 24,
-    },
-    {
-        title : "Vegetales",
-         price :  800,
-        description : "Salsa de tomate casera, muzzarella, vegetales salteados y mix de semillas(zanahoria,cebolla,pimientos rojos y verdes, berenjena)",
-        id : 25,
-    },
-    {
-        title :"Calabreza",
-        price :" 750",
-        description : "Salsa de tomate casera, muzzarella y chorizo colorado",
-        id : 26,
-    },
-    {
-        title : "Cuatro Quesos",
-         price :  750,
-        description : "Salsa de tomate casera, muzzarella, provolone, queso azul y queso parmesano",
-        id : 27,
-    },
-    {
-        title : "Parmesano y Rucula",
-         price : 800,
-        description : "Salsa de tomate casera, muzzarella, rucula fresca, tomates cherry, queso parmesano y aceite de oliva",
-        id : 28,
-    }
-];
-function PintarPizzas(){
+
+function PintarPizzas(data){
     const carta = document.querySelector("#pizzas")
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
-    Pizzas.forEach(producto =>{
+    const pizzas = data.filter(el =>{
+        return (el.category === "pizza")
+    })
+    pizzas.forEach(producto =>{
         template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
         template1.querySelector("p").textContent = producto.description
@@ -195,11 +26,14 @@ function PintarPizzas(){
     })
     carta.appendChild(fragment)
 }
-function PintarMilanesas(){
+function PintarMilanesas(data){
     const carta = document.querySelector("#milanesas")
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
-    Milanesas.forEach(producto =>{
+    const milanesas = data.filter(el =>{
+        return (el.category === "milanesa")
+    })
+    milanesas.forEach(producto =>{
         template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
         template1.querySelector("p").textContent = producto.description
@@ -211,10 +45,13 @@ function PintarMilanesas(){
     carta.appendChild(fragment)
 }
 
-function PintarBurger(){
+function PintarBurger(data){
     const carta = document.querySelector("#hamburgesas")
     const template1 = document.querySelector("#template-1").content
     const fragment = document.createDocumentFragment();
+    const Hamburgesas = data.filter(el =>{
+        return (el.category === "burger")
+    })
     Hamburgesas.forEach(producto =>{
         template1.querySelector(".title").textContent = `"${producto.title}"`
         template1.querySelector(".price").textContent = producto.price
@@ -227,9 +64,6 @@ function PintarBurger(){
     carta.appendChild(fragment)
 }
 
-PintarBurger();
-PintarMilanesas();
-PintarPizzas();
 
 // CARRITO //
 let carrito = [];

@@ -1,0 +1,207 @@
+[
+
+    {
+        "title" :"Triple kinga",
+        "price" : 970,
+        "description" : "Pan casero, tres medallones de carne, con triple cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
+        "id" : 0,
+        "category": "burger"
+    },
+    {
+        "title" : "Doble kinga",
+        "price" : 850,
+        "description" : "Pan casero, dos medallones de carne, con doble cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
+        "id" : 1,
+        "category": "burger"
+    },
+    {
+        "title" : "Tradicional",
+         "price" :700,
+        "description" : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
+        "id" : 2,
+        "category": "burger"
+    },
+    {
+        "title" :"Mini kinga",
+        "price" : 700,
+        "description" : "Pan casero, un medallon de carne con doble cheddar, panceta(opcional salsa doble cuarto).Acompañada de papas fritas",
+        "id" : 3,
+        "category": "burger"
+    },
+    {
+        "title" : "De la casa",
+         "price" :  750,
+        "description" : "Pan casero, medallon de carne, muzzarella, cebolla caramelizada y rucula. Acompañada de papas fritas",
+        "id" : 4,
+        "category": "burger"
+    },
+    {
+        "title" : "Criolla",
+         "price" :  800,
+        "description" : "Pan casero, un medallon de carne, queso provolone fundido, morrones y cebollas salteadas en aceite de ajos. Acompañado de papas fritas",
+        "id" : 5,
+        "category": "burger"
+    },
+    {
+        "title" :"Deluxe",
+        "price" :900,
+        "description" : "Pan casero, dos medallones de carne,doble cheddar,lechuga,tomate,panceta y alioli. Acompañado de papas fritas",
+        "id" : 6,
+        "category": "burger"
+    },
+    {
+        "title" : "Veggie Tradicional",
+         "price" :  650,
+        "description" : "Pan casero, dos medallones de carne, con doble cheddar, panceta y aderezo doble cuarto. Acompañado de papas fritas",
+        "id" : 7,
+        "category": "burger"
+    },
+    {
+        "title" : "Veggie de la casa",
+         "price" :  700,
+        "description" : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
+        "id" : 8,
+        "category": "burger"
+    },
+    {
+        "title" : "Veggie Criolla",
+         "price" :  700,
+        "description" : "Pan casero, un medallon de carne,jamon,queso,tomate y lechuga. Acompañada de papas fritas",
+        "id" : 9,
+        "category": "burger"
+    },
+    {
+        "title" :"Clasica Completa",
+        "price" :800,
+        "description" : "Milanesa de ternera con jamon, queso, tomate y lechuga. Acompañada de papas fritas o ensalada",
+        "id" : 10,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Napolitana",
+         "price" :  850,
+        "description" : "Milanesa de ternera, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
+        "id" : 11,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Fugazzeta",
+         "price" :  850,
+        "description" : "Milanesa de ternera con muzzarela, cebolla salteada y orégano. Acompañada de papas fritas",
+        "id" : 12,
+        "category" : "milanesa"
+    },
+    {
+        "title" :"Cuatro quesos",
+        "price" :850,
+        "description" : "Milanesa de tenera con muzzarella, queso azul, provolone y queso parmesano. Acompañada de papas fritas o ensalada",
+        "id" : 13,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Criminal",
+         "price" :  950,
+        "description" : "Milanesa de tenera, queso chedar, cebolla de verdeo, jamon, dos huevos fritos y pimenton dulce. Acompañada de papas fritas",
+        "id" : 14,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Pollo Clasica",
+         "price" :  800,
+        "description" : "Milanesa de pollo con jamon, queso, lechuga y tomate. Acompañada de papas fritas",
+        "id" : 15,
+        "category" : "milanesa"
+    },
+    {
+        "title" :"Pollo Fugazzeta",
+        "price" : 850,
+        "description" : "Milanesa de pollo, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
+        "id" : 16,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Pollo Cuatro Quesos",
+         "price" :  850,
+        "description" : "Milanesa de pollo con muzzarella, queso azul, provolone y queso parmesano. Acompañada de papas fritas o ensalada",
+        "id" : 17,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Pollo napolitana",
+         "price" :  850,
+        "description" : "Milanesa de pollo, con salsa de tomate casera, muzzarela, jamón y orégano. Acompañado de papas fritas.",
+        "id" : 18,
+        "category" : "milanesa"
+    },
+    {
+        "title" : "Pollo Criminal",
+         "price" :  950,
+        "description" : "Milanesa de pollo, queso chedar, cebolla de verdeo, jamon, dos huevos fritos y pimenton dulce. Acompañada de papas fritas",
+        "id" : 19,
+        "category" : "milanesa"
+    },
+    {
+        "title" :"Muzzarela",
+        "price" : 650,
+        "description" : "Salsa de tomate casera, muzzarella, oregano y aceitunas",
+        "id" : 20,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Tomate y Albahaca",
+         "price" :850,
+        "description" : "Salsa de tomate casera, muzzarella, tomate en rodajas, albahaca y oregano",
+        "id" : 21,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Tomate y ajo",
+         "price" :  720,
+        "description" : "Salsa de tomate casera, muzzarella, tomates en rodajas, ajo picado y oregano",
+        "id" : 22,
+        "category" : "pizza"
+    },
+    {
+        "title" :"Especial",
+        "price" :780,
+        "description" : "Salsa de tomate casera, muzzarella, jamon, morrones asados, aceitunas y oregano",
+        "id" : 23,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Fugazzetta",
+         "price" :  720,
+        "description" : "Salsa de tomate casera, muzzarella, cebolla curada y oregano",
+        "id" : 24,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Vegetales",
+         "price" :  800,
+        "description" : "Salsa de tomate casera, muzzarella, vegetales salteados y mix de semillas(zanahoria,cebolla,pimientos rojos y verdes, berenjena)",
+        "id" : 25,
+        "category" : "pizza"
+    },
+    {
+        "title" :"Calabreza",
+        "price" :" 750",
+        "description" : "Salsa de tomate casera, muzzarella y chorizo colorado",
+        "id" : 26,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Cuatro Quesos",
+         "price" :  750,
+        "description" : "Salsa de tomate casera, muzzarella, provolone, queso azul y queso parmesano",
+        "id" : 27,
+        "category" : "pizza"
+    },
+    {
+        "title" : "Parmesano y Rucula",
+         "price" : 800,
+        "description" : "Salsa de tomate casera, muzzarella, rucula fresca, tomates cherry, queso parmesano y aceite de oliva",
+        "id" : 28,
+        "category" : "pizza"
+    }
+
+]
