@@ -28,6 +28,9 @@
         text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
         font-size: 2em;
     }
+    li{
+        display: inline-block;
+    }
     button{
         font-family: 'Montserrat', sans-serif;
         color: #080707;
@@ -52,7 +55,8 @@
     font-family: 'Roboto', sans-serif;
     text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
     color: #f1eeed;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     padding: 8px;
@@ -100,4 +104,26 @@ div .cardComida{
 .signopeso, .price{
     display: inline-block;
     font-size: 1.2em;
+}
+div.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.btnActive{
+    background-color: #f5b952;
+    transform: translateY(-3%);
+}
+div.contenedor-productos{
+    display: none!important;
+}
+.contenedor-productos.activo{
+    display: flex !important;
+}
+
+.titulo-carta{
+    display: none;
+}
+.titulo-carta.activoTitulo{
+    display: flex;
 }

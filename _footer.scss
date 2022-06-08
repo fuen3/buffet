@@ -22,13 +22,12 @@
     text-align: center;
     color: #f1eeed;
     div{
+        overflow: hidden;
         a{
             padding: 5px;
             text-decoration: none;
             font-size: 1.8em;
             color: rgb(237, 189, 107);
-            transition: all .5s;
-
         }
     }
 }

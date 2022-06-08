@@ -6,149 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/964b797c0c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/pixlr-bg-result.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&family=Smooch+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/964b797c0c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&family=Smooch+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/650080ce50.js" crossorigin="anonymous"></script>
     <title>Buffet | Plaza Center</title>
 </head>
 
 <body class="cuerpo">
-    <nav class="main-nav">
-        <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i>Menu</span>
-        <ul class="menu" id="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="#mapa">¿Donde estamos?</a></li>
-            <li><a href="#"><img src="/img/pixlr-bg-result.png" alt="logo del buffet" class="nav-bar__logo"></a></li>
-            <li><a href="">Delivery</a></li>
-            <li><a href="">Carta</a></li>
-        </ul>
-    </nav>
-
-    <header class="header">
-        <div class="header__texto">
-            <h1>BUFFET PLAZA CENTER</h1>
-            <h2>¡Tu punto de encuentro!</h2>
-        </div>
-    </header>
-
-    <section class="contenedor-map-texto" id="mapa">
-        <div class="map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d812.7658050252365!2d-60.1668669!3d-35.4284639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95be60531a7c4691%3A0xfc6313140e3666fc!2sC.%206%20%26%20C.%2032%2C%20Veinticinco%20de%20Mayo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647117675511!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="maptxt">
-            <h3>Estamos ubicados dentro del centro deportivo <span>PLAZA CENTER</span></h3>
-            <h4>Calle 6 y 32</h4>
-            <h4>Contacto:</h4>
-            <p><span>Buffet:</span> buffetplaza@gmail.com 2345-481942 <br> <span>Plaza Center:</span> plazacenter@gmail.com 2345-481942</p>
-        </div>
-    </section>
-
-    <section class="carta-container" id="container">
-        <div class="input-container">
-            <h3 class="carta-titulo">Filtrar</h3>
-            <button id="filtrarBurger" class="btn-filtrar">Hamburgesas</button>
-            <button id="filtrarMilanesa" class="btn-filtrar">Milanesas</button>
-            <button id="filtrarPizza" class="btn-filtrar">Pizza</button>
-        </div>
-
-        <h3 class="titulo-carta" id="titulo-hamburgesa">HAMBURGESAS</h3>
-            <div class="row d-flex justify-content-center" id="hamburgesas">
-
+        <nav class="main-nav">
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i>Menu</span>
+            <ul class="menu" id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#mapa">¿Donde estamos?</a></li>
+                <li><a href="#menu"><img src="../img/pixlr-bg-result.png" alt="logo del buffet" class="nav-bar__logo"></a></li>
+                <li><a href="#">Proximamente</a></li>
+                <li><a href="#container">Carta</a></li>
+            </ul>
+        </nav>
+        
+        <header class="header">
+            <div class="header__texto">
+                <h1>BUFFET PLAZA CENTER</h1>
+                <h2>¡Tu punto de encuentro!</h2>
             </div>
-        <h3 class="titulo-carta" id="titulo-milanesas">MILANESAS</h3>
-        <div class="row d-flex justify-content-center" id="milanesas">
-
-        </div>
-        <h3 class="titulo-carta" id="titulo-pizzas">PIZZAS</h3>
-        <div class="row d-flex justify-content-center" id="pizzas">
-
-        </div>
-    </section>
-    <div class="container">
-        <h4>Carrito de compras</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Acción</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody id="items"></tbody>
-          <tfoot>
-            <tr id="footer">
-              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-            </tr>
-          </tfoot>
-        </table>
-        <div class="row" id="cards"></div>
-      </div>
-      
-<template id="template-1">
-    <div class="cardComida col-3">
-        <img src="img/burger1.jpeg" alt="">
-        <h3 class="title">Burger Criolla</h3>
-            <span class="signopeso">
-                $
-                <h3 class="price"></h3>
-            </span>
-        <p>Pan casero, un medallon de carne, queso provolone fundido, morrones y cebollas salteadas en aceite de ajos. Acompañado de papas fritas</p>
-        <i class="fa-solid fa-cart-plus btn-agregar btn" data-id=""></i>
-    </div>  
-</template>
-
-<template id="template-carrito">
-    <tr>
-      <th scope="row">id</th>
-      <td>Café</td>
-      <td>1</td>
-      <td>
-          <button class="btn btn-info btn-sm">
-              +
-          </button>
-          <button class="btn btn-danger btn-sm">
-              -
-          </button>
-      </td>
-      <td>$ <span>500</span></td>
-    </tr>
-  </template>
-
-  <template id="template-footer">
-    <th scope="row" colspan="2">Total productos</th>
-    <td>10</td>
-    <td>
-        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-            Vaciar todo
-        </button>
-        <button type="button" class="btn btn-success btn-sm" id="finalizar-compra">
-            Confimar pedido
-        </button>
-    </td>
-    <td class="font-weight-bold">$ <span>5000</span></td>
-</template>
-    
-    <footer class="footer">
-        <div class="contenedor__footer">
-            <img src="img/pixlr-bg-result.png" alt="Logo del buffet">
-            <h3>¡Tu punto de encuentro!</h3>
-            <h4>buffetplaza@gmail.com <br> 2345481942</h4>
-            <div>
-                <a href="https://www.instagram.com/plazacenterbuffet/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Buffet-Plaza-Center-106321171531263"><i class="fa-brands fa-facebook-square"></i></a>
+        </header>
+        
+        <section class="contenedor-map-texto" id="mapa">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d812.7658050252365!2d-60.1668669!3d-35.4284639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95be60531a7c4691%3A0xfc6313140e3666fc!2sC.%206%20%26%20C.%2032%2C%20Veinticinco%20de%20Mayo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647117675511!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </div>
-    </footer>
+            <div class="maptxt">
+                <h3>Estamos ubicados dentro del centro deportivo <span>PLAZA CENTER</span></h3>
+                <h4>Calle 6 y 32</h4>
+                <h4>Contacto:</h4>
+                <p><span>Buffet:</span> buffetplaza@gmail.com 2345-481942 <br> <span>Plaza Center:</span>
+                    plazacenter@gmail.com 2345-481942</p>
+            </div>
+        </section>
+        
+        <section class="carta-container" id="container">
+            <div class="input-container">
+                <h3 class="carta-titulo">Filtrar</h3>
+                <button id="categoria" class="btn-filtrar btnActive" data-category="hamburgesas">Hamburgesas</button>
+                <button id="categoria" class="btn-filtrar" data-category="milanesa">Milanesas</button>
+                <button id="categoria" class="btn-filtrar" data-category="pizzas">Pizza</button>
+            </div>
+        
+            <h3 class="titulo-carta contenedor-productos activoTitulo" id="titulo-hamburgesa" data-category="hamburgesas">HAMBURGESAS</h3>
+            <div class="row d-flex justify-content-center contenedor-productos activo" id="hamburgesas" data-category="hamburgesas">
+        
+            </div>
+            <h3 class="titulo-carta contenedor-productos " id="titulo-milanesas" data-category="milanesa">MILANESAS</h3>
+            <div class="row d-flex justify-content-center contenedor-productos" id="milanesas" data-category="milanesa">
+        
+            </div>
+            <h3 class="titulo-carta contenedor-productos " id="titulo-pizzas" data-category="pizzas">PIZZAS</h3>
+            <div class="row d-flex justify-content-center contenedor-productos" id="pizzas" data-category="pizzas">
+        
+            </div>
+            <div class="div-iconCart" id="iconcart">
+                <i class="fa-solid fa-cart-shopping iconCart"></i>
+            </div>
+
+            <div class="div-cart" id="mostrarCart">
+                <div class="div-iconCerrar">
+                    <i class="fa-solid fa-rectangle-xmark iconCerrar" id="iconCerrar"></i>
+                </div>
+                <table class="table-cart" id="carritoTable">
+                    <thead>
+                      <tr class="tHead">
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Accion</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="contenedorItems"></tbody>
+                    <tfoot>
+                        <tr id="footerTable">
+                            <td colspan="4">¡Carrito vacio! Comienze a comprar.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <template id="template-itemCart">
+            <tr class="item-cart">
+                <td >Pizza</td>
+                <td>1</td>
+                <td>
+                    <button class="btn btn-sm btn-info">+</button>
+                    <button class="btn btn-sm btn-danger">-</button>
+                </td>  
+                <td>$ <span></span></td>
+              </tr>
+        </template>
+        <template id="template-footer">
+                <td colspan="2">
+                    <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                        Vaciar Carrito
+                    </button>
+                    <button class="btn btn-success btn-sm" id="finalizar-compra">
+                        Confimar Pedido
+                    </button>
+                </td>
+                <td>Total:</td>
+                <td class="font-weight-bold">$ <span id="totalFooter"></span></td>
+        </template>
+        <template id="template-1">
+            <div class="cardComida col-3 item" data-category="" >
+                <img src="img/burger1.jpeg" alt="">
+                <h3 class="title">Burger Criolla</h3>
+                <span class="signopeso">
+                    $
+                    <h3 class="price"></h3>
+                </span>
+                <p></p>
+                <i class="fa-solid fa-cart-plus btn-agregar btn" data-id=""></i>
+            </div>
+        </template>
+        
+        
+        <footer class="footer">
+            <div class="contenedor__footer">
+                <img src="img/pixlr-bg-result.png" alt="Logo del buffet">
+                <h3>¡Tu punto de encuentro!</h3>
+                <h4>buffetplaza@gmail.com <br> 2345481942</h4>
+                <div>
+                    <a href="https://www.instagram.com/plazacenterbuffet/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Buffet-Plaza-Center-106321171531263"><i
+                            class="fa-brands fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </footer>
+         <div id="overlay"></div> 
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="menu.js"></script>
-<script src="app.js"></script>
+<script src="app.js" defer></script>
+
 </html>
